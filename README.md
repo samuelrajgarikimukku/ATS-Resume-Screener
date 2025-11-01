@@ -4,43 +4,31 @@ This project is a powerful, dual-interface (Streamlit Web App & CLI) tool that l
 
 It acts as a personal career assistant, providing five distinct functions:
 
-Honest Resume Evaluation: Simulates a technical recruiter's feedback.
-
-Skills Gap Analysis: Acts as a career coach to identify missing skills.
-
-ATS Match Score: Simulates an Applicant Tracking System (ATS) to give a match percentage and identify missing keywords.
-
-Resume Rewriting: Acts as a professional resume writer to optimize your resume for ATS.
-
-Interview Prep: Generates tailored technical and HR questions with sample answers based on the resume and job description.
+1. Honest Resume Evaluation: Simulates a technical recruiter's feedback.
+2. Skills Gap Analysis: Acts as a career coach to identify missing skills.
+3. ATS Match Score: Simulates an Applicant Tracking System (ATS) to give a match percentage and identify missing keywords.
+4. Resume Rewriting: Acts as a professional resume writer to optimize your resume for ATS.
+5. Interview Prep: Generates tailored technical and HR questions with sample answers based on the resume and job description.
 
 The application is built to be robust, with a graceful fallback to a command-line interface (CLI) if streamlit is not installed, and includes offline-capable unit tests.
 
-Key Features
-🖥️ Dual Interface: Run as a user-friendly Streamlit web app or as a robust CLI tool.
+## Key Features
+- 🖥️ Dual Interface: Run as a user-friendly Streamlit web app or as a robust CLI tool.
+- 🧠 Five-in-One Career Assistant: Access five different AI personas (Recruiter, Coach, ATS Engine, Resume Writer, Interviewer) for comprehensive job application support.
+- 📄 PDF File Processing: Uses the Gemini API's file uploading capability to directly analyze PDF resumes, ensuring accurate content extraction.
+- 🔄 Robust API Handling: Includes logic to poll the API while the file is processing and provides automatic cleanup of uploaded files.
+- 🧪 Built-in Unit Tests: Comes with a unittest suite that mocks all external google.generativeai calls, allowing for safe and fast offline testing of the core logic.
 
-🧠 Five-in-One Career Assistant: Access five different AI personas (Recruiter, Coach, ATS Engine, Resume Writer, Interviewer) for comprehensive job application support.
-
-📄 PDF File Processing: Uses the Gemini API's file uploading capability to directly analyze PDF resumes, ensuring accurate content extraction.
-
-🔄 Robust API Handling: Includes logic to poll the API while the file is processing and provides automatic cleanup of uploaded files.
-
-🧪 Built-in Unit Tests: Comes with a unittest suite that mocks all external google.generativeai calls, allowing for safe and fast offline testing of the core logic.
-
-🚀 Getting Started
+## 🚀 Getting Started
 1. Prerequisites
-Python 3.8+
-
-A Google Gemini API Key. You can get one from Google AI Studio.
+    - Python 3.8+
+    - A Google Gemini API Key. You can get one from Google AI Studio.
 
 2. Installation
-Clone the repository (or save the script):
-
-Bash
-
-git clone [your-repo-url]
-cd [your-repo-directory]
-(Or, just save the Python file as app.py)
+    1. Clone the repository (or save the script):
+            git clone [your-repo-url]
+            cd [your-repo-directory]
+    (Or, just save the Python file as app.py)
 
 Create and activate a virtual environment:
 
