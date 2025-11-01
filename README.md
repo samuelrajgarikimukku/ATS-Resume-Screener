@@ -1,4 +1,5 @@
-ATS Resume Screener & Career Assistant (Powered by Gemini)
+# ATS Resume Screener & Career Assistant (Powered by Gemini)
+
 This project is a powerful, dual-interface (Streamlit Web App & CLI) tool that leverages the Google Gemini API to analyze a PDF resume against a specific job description.
 
 It acts as a personal career assistant, providing five distinct functions:
